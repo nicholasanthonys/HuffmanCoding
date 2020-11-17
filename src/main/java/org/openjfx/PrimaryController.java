@@ -83,8 +83,8 @@ public class PrimaryController {
             int ratio = controller.getPercentageRatioCompression(compressionSize, inputText.getText().length());
             System.out.println("ratio compression is :" + ratio + "%");
 
-            lblCompressionSize.setText(Integer.toString(compressionSize) + " BYTE");
-            lblOriginalSize.setText(Integer.toString(inputText.getText().length()) + " BYTE");
+            lblCompressionSize.setText(compressionSize + " BYTE");
+            lblOriginalSize.setText(inputText.getText().length() + " BYTE");
             lblRatio.setText(ratio + "%");
         }
     }
