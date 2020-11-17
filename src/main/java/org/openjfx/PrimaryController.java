@@ -27,6 +27,8 @@ public class PrimaryController {
     @FXML
     private JFXListView<Label> myList;
 
+    @FXML private Label lblOriginalSize, lblCompressionSize, lblRatio;
+
     Controller controller = new Controller();
     Util util = new Util();
 
@@ -79,7 +81,11 @@ public class PrimaryController {
 
             //* let's get ratio compression
             int ratio = controller.getPercentageRatioCompression(compressionSize, inputText.getText().length());
-            System.out.println("ratio compression is -" + ratio + "%");
+            System.out.println("ratio compression is :" + ratio + "%");
+
+            lblCompressionSize.setText(Integer.toString(compressionSize) + " BYTE");
+            lblOriginalSize.setText(Integer.toString(inputText.getText().length()) + " BYTE");
+            lblRatio.setText(ratio + "%");
         }
     }
 

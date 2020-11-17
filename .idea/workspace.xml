@@ -22,16 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500c689c-357b-45c9-be83-8358b906b0cf" name="Default Changelist" comment="fix error Illegal reflective access by com.jfoenix.adapters.ReflectionHelper">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/openjfx/Models/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/openjfx/controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/openjfx/controller/Util.java" afterDir="false" />
+    <list default="true" id="500c689c-357b-45c9-be83-8358b906b0cf" name="Default Changelist" comment="do huffman compression, UI not done yet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/openjfx/PrimaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openjfx/PrimaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openjfx/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openjfx/controller/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/org/openjfx/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/openjfx/primary.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/openjfx/PrimaryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/openjfx/PrimaryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/openjfx/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/openjfx/primary.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +202,7 @@
       <workItem from="1605455331443" duration="146000" />
       <workItem from="1605459098826" duration="1777000" />
       <workItem from="1605488496143" duration="28000" />
-      <workItem from="1605594887009" duration="27588000" />
+      <workItem from="1605594887009" duration="28289000" />
     </task>
     <task id="LOCAL-00001" summary="setup project">
       <created>1605450851605</created>
@@ -222,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605603773484</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="do huffman compression, UI not done yet">
+      <created>1605628635297</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605628635297</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,7 +250,8 @@
     <MESSAGE value="setup project" />
     <MESSAGE value="fix error Illegal reflective access by com.jfoenix.adapters.ReflectionHelpe" />
     <MESSAGE value="fix error Illegal reflective access by com.jfoenix.adapters.ReflectionHelper" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix error Illegal reflective access by com.jfoenix.adapters.ReflectionHelper" />
+    <MESSAGE value="do huffman compression, UI not done yet" />
+    <option name="LAST_COMMIT_MESSAGE" value="do huffman compression, UI not done yet" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1366" y="36" width="1084" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605603582747">
@@ -278,22 +282,22 @@
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="1809" y="155" width="735" height="491" key="FileChooserDialogImpl/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605597544466" />
-    <state width="1274" height="101" key="GridCell.Tab.0.bottom" timestamp="1605628382351">
+    <state width="1274" height="139" key="GridCell.Tab.0.bottom" timestamp="1605628796333">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state width="1274" height="101" key="GridCell.Tab.0.bottom/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605628382351" />
-    <state width="1274" height="101" key="GridCell.Tab.0.center" timestamp="1605628382350">
+    <state width="1274" height="139" key="GridCell.Tab.0.bottom/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605628796333" />
+    <state width="1274" height="139" key="GridCell.Tab.0.center" timestamp="1605628796333">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state width="1274" height="101" key="GridCell.Tab.0.center/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605628382350" />
-    <state width="1274" height="101" key="GridCell.Tab.0.left" timestamp="1605628382350">
+    <state width="1274" height="139" key="GridCell.Tab.0.center/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605628796333" />
+    <state width="1274" height="139" key="GridCell.Tab.0.left" timestamp="1605628796333">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state width="1274" height="101" key="GridCell.Tab.0.left/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605628382350" />
-    <state width="1274" height="101" key="GridCell.Tab.0.right" timestamp="1605628382350">
+    <state width="1274" height="139" key="GridCell.Tab.0.left/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605628796333" />
+    <state width="1274" height="139" key="GridCell.Tab.0.right" timestamp="1605628796333">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state width="1274" height="101" key="GridCell.Tab.0.right/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605628382350" />
+    <state width="1274" height="139" key="GridCell.Tab.0.right/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605628796333" />
     <state x="1472" y="27" width="1099" height="741" key="SettingsEditor" timestamp="1605602210366">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
@@ -302,14 +306,14 @@
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="1466" y="127" width="1120" height="541" key="VCS.FileHistoryDialog/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605451780118" />
-    <state x="1621" y="129" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1605603776396">
+    <state x="1621" y="129" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1605628637800">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state x="1621" y="129" width="800" height="543" key="Vcs.Push.Dialog.v2/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605603776396" />
-    <state x="1832" y="72" width="616" height="612" key="find.popup" timestamp="1605450473320">
+    <state x="1621" y="129" width="800" height="543" key="Vcs.Push.Dialog.v2/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605628637800" />
+    <state x="1832" y="72" width="616" height="612" key="find.popup" timestamp="1605628578922">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state x="1832" y="72" width="616" height="612" key="find.popup/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605450473320" />
+    <state x="1832" y="72" width="616" height="612" key="find.popup/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605628578922" />
     <state x="1830" y="307" width="381" height="187" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1605450869784">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>

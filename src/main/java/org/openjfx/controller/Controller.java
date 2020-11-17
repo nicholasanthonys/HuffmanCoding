@@ -132,7 +132,7 @@ public class Controller {
     }
 
     public int getPercentageRatioCompression(int compressionSize, int textSize) {
-        return (int) Math.round((100 - (compressionSize * 100.0 / textSize)));
+        return (int) Math.round((compressionSize * 100.0 / textSize) - 100);
     }
 
 }
