@@ -22,7 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500c689c-357b-45c9-be83-8358b906b0cf" name="Default Changelist" comment="" />
+    <list default="true" id="500c689c-357b-45c9-be83-8358b906b0cf" name="Default Changelist" comment="deep copy map. Add Tittle. Remove unused code. add comments">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/HuffmanCoding_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,8 +36,23 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="GOROOT" path="$USER_HOME$/go" />
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="master" />
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="development" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JupyterTrust" id="4f7fca24-efd6-4967-864d-7a1c4a0f56b9" />
@@ -42,6 +62,10 @@
         <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="delegateBuildToMaven" value="true" />
+    <option name="jreName" value="JDK 13" />
   </component>
   <component name="ProjectId" id="1kKUBIP8VYS8rMVDZBjPMfoaGzg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -57,15 +81,21 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../clone/space-website" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.5126437" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.openjfx" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JAR Application.original-HuffmanCoding-1.0-SNAPSHOT.jar">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.openjfx.App" />
       <module name="HuffmanCoding" />
@@ -75,33 +105,124 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <extension name="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
-        </ENTRIES>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GUIStarter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.openjfx.GUIStarter" />
+      <module name="HuffmanCoding" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.openjfx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HuffmanCoding-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/HuffmanCoding-1.0-SNAPSHOT.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="original-HuffmanCoding-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/original-HuffmanCoding-1.0-SNAPSHOT.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="HuffmanCoding [clean,compile,package...]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="true" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="JDK 13" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="compile" />
+                <option value="package" />
+                <option value="javafx:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="javafx:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.App" />
+      <item itemvalue="Maven.HuffmanCoding [clean,compile,package...]" />
+      <item itemvalue="JAR Application.HuffmanCoding-1.0-SNAPSHOT.jar" />
+      <item itemvalue="Application.GUIStarter" />
+      <item itemvalue="JAR Application.original-HuffmanCoding-1.0-SNAPSHOT.jar" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR Application.original-HuffmanCoding-1.0-SNAPSHOT.jar" />
+        <item itemvalue="Application.GUIStarter" />
+        <item itemvalue="JAR Application.HuffmanCoding-1.0-SNAPSHOT.jar" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
@@ -116,8 +237,57 @@
       <updated>1605448639837</updated>
       <workItem from="1605448641482" duration="420000" />
       <workItem from="1605449596305" duration="604000" />
-      <workItem from="1605450397086" duration="396000" />
+      <workItem from="1605450397086" duration="4076000" />
+      <workItem from="1605454994990" duration="303000" />
+      <workItem from="1605455331443" duration="146000" />
+      <workItem from="1605459098826" duration="1777000" />
+      <workItem from="1605488496143" duration="28000" />
+      <workItem from="1605594887009" duration="36333000" />
+      <workItem from="1605661574211" duration="4336000" />
     </task>
+    <task id="LOCAL-00001" summary="setup project">
+      <created>1605450851605</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605450851605</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix error Illegal reflective access by com.jfoenix.adapters.ReflectionHelper">
+      <created>1605603773484</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605603773484</updated>
+    </task>
+    <task id="LOCAL-00003" summary="do huffman compression, UI not done yet">
+      <created>1605628635297</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605628635297</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Set FXLabel for compression size, original size, and ratio">
+      <created>1605629295851</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605629295851</updated>
+    </task>
+    <task id="LOCAL-00005" summary="refactor code">
+      <created>1605629317236</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605629317236</updated>
+    </task>
+    <task id="LOCAL-00006" summary="deep copy map. Add Tittle. Remove unused code. add comments">
+      <created>1605663412821</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605663412821</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,50 +305,107 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../../../../.." />
+    </ignored-roots>
+    <MESSAGE value="setup project" />
+    <MESSAGE value="fix error Illegal reflective access by com.jfoenix.adapters.ReflectionHelpe" />
+    <MESSAGE value="fix error Illegal reflective access by com.jfoenix.adapters.ReflectionHelper" />
+    <MESSAGE value="do huffman compression, UI not done yet" />
+    <MESSAGE value="Set FXLabel for compression size, original size, and ratio" />
+    <MESSAGE value="refactor code" />
+    <MESSAGE value="deep copy map. Add Tittle. Remove unused code. add comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="deep copy map. Add Tittle. Remove unused code. add comments" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="1443" y="55" width="1084" height="710" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605450489867">
+    <state x="1366" y="36" width="1084" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605603582747">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state x="1443" y="55" width="1084" height="710" key="#com.intellij.execution.impl.EditConfigurationsDialog/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605450489867" />
+    <state x="1366" y="36" width="1084" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605603582747" />
+    <state x="1734" y="189" width="573" height="423" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605606596331">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state x="1734" y="189" width="573" height="423" key="#com.intellij.fileTypes.FileTypeChooser/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605606596331" />
     <state x="1768" y="105" width="424" height="591" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1605448935815">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="1768" y="105" width="424" height="591" key="#com.intellij.ide.macro.MacrosDialog/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605448935815" />
-    <state x="1809" y="155" width="447" height="491" key="FileChooserDialogImpl" timestamp="1605450746427">
+    <state x="1834" y="76" width="559" height="649" key="#com.intellij.ide.util.MemberChooser" timestamp="1605636975914">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state x="1809" y="155" width="447" height="491" key="FileChooserDialogImpl/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605450746427" />
-    <state width="1274" height="93" key="GridCell.Tab.0.bottom" timestamp="1605450657799">
+    <state x="1834" y="76" width="559" height="649" key="#com.intellij.ide.util.MemberChooser/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605636975914" />
+    <state x="1749" y="193" width="525" height="423" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1605663478244">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state width="1274" height="93" key="GridCell.Tab.0.bottom/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605450657799" />
-    <state width="1274" height="93" key="GridCell.Tab.0.center" timestamp="1605450657799">
+    <state x="1749" y="193" width="525" height="423" key="#com.intellij.ide.util.TreeClassChooserDialog/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605663478244" />
+    <state x="1781" y="301" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1605665339230">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state width="1274" height="93" key="GridCell.Tab.0.center/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605450657799" />
-    <state width="1274" height="93" key="GridCell.Tab.0.left" timestamp="1605450657799">
+    <state x="1781" y="301" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605665339230" />
+    <state x="2267" y="27" width="419" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605618074947">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state width="1274" height="93" key="GridCell.Tab.0.left/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605450657799" />
-    <state width="1274" height="93" key="GridCell.Tab.0.right" timestamp="1605450657799">
+    <state x="2267" y="27" width="419" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605618074947" />
+    <state x="1759" y="146" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605665761632">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state width="1274" height="93" key="GridCell.Tab.0.right/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605450657799" />
-    <state x="1472" y="27" width="1024" height="741" key="SettingsEditor" timestamp="1605450736555">
+    <state x="1759" y="146" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605665761632" />
+    <state x="1759" y="146" width="524" height="509" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1605636625085">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state x="1472" y="27" width="1024" height="741" key="SettingsEditor/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605450736555" />
-    <state x="1832" y="72" width="616" height="612" key="find.popup" timestamp="1605450473320">
+    <state x="1759" y="146" width="524" height="509" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605636625085" />
+    <state x="1809" y="155" width="735" height="491" key="FileChooserDialogImpl" timestamp="1605663534313">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state x="1832" y="72" width="616" height="612" key="find.popup/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605450473320" />
-    <state x="1830" y="307" width="381" height="187" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1605450762738">
+    <state x="1809" y="155" width="735" height="491" key="FileChooserDialogImpl/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605663534313" />
+    <state width="1274" height="122" key="GridCell.Tab.0.bottom" timestamp="1605665907180">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state x="1830" y="307" width="381" height="187" key="git4idea.remote.GitConfigureRemotesDialog/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605450762738" />
+    <state width="1274" height="122" key="GridCell.Tab.0.bottom/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605665907180" />
+    <state width="1274" height="122" key="GridCell.Tab.0.center" timestamp="1605665907180">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state width="1274" height="122" key="GridCell.Tab.0.center/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605665907180" />
+    <state width="1274" height="122" key="GridCell.Tab.0.left" timestamp="1605665907180">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state width="1274" height="122" key="GridCell.Tab.0.left/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605665907180" />
+    <state width="1274" height="122" key="GridCell.Tab.0.right" timestamp="1605665907180">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state width="1274" height="122" key="GridCell.Tab.0.right/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605665907180" />
+    <state x="1397" y="27" width="1099" height="741" key="SettingsEditor" timestamp="1605664395771">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state x="1397" y="27" width="1099" height="741" key="SettingsEditor/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605664395771" />
+    <state x="1466" y="127" width="1120" height="541" key="VCS.FileHistoryDialog" timestamp="1605451780118">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state x="1466" y="127" width="1120" height="541" key="VCS.FileHistoryDialog/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605451780118" />
+    <state x="1621" y="129" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1605663415092">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state x="1621" y="129" width="800" height="543" key="Vcs.Push.Dialog.v2/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605663415092" />
+    <state x="1832" y="72" width="616" height="612" key="find.popup" timestamp="1605628578922">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state x="1832" y="72" width="616" height="612" key="find.popup/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605628578922" />
+    <state x="1830" y="307" width="381" height="187" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1605450869784">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state x="1830" y="307" width="381" height="187" key="git4idea.remote.GitConfigureRemotesDialog/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605450869784" />
     <state x="1884" y="27" width="802" height="741" key="new project wizard" timestamp="1605449679102">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="1884" y="27" width="802" height="741" key="new project wizard/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605449679102" />
+    <state x="1865" y="294" width="312" height="213" key="save.project.as.template.dialog" timestamp="1605603263202">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state x="1865" y="294" width="312" height="213" key="save.project.as.template.dialog/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605603263202" />
+    <state x="1689" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1605665133864">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state x="1689" y="89" width="672" height="678" key="search.everywhere.popup/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605665133864" />
   </component>
 </project>
