@@ -26,27 +26,30 @@ public class Controller {
         Queue<TreeNode> priorityQueue = new LinkedList<>();
         int repeatFor = 0;
 
+        //* we need to deep copy tempMap because we're gonna deal with removing element so it won't affecting the original map
+        HashMap<Character, Integer> tempMap = util.deepCopyMap(map);
+
         //* map size is an odd number
-        if (map.size() % 2 > 0) {
-            repeatFor = map.size() / 2 + 1;
+        if (tempMap.size() % 2 > 0) {
+            repeatFor = tempMap.size() / 2 + 1;
         } else {
-            repeatFor = map.size() / 2;
+            repeatFor = tempMap.size() / 2;
         }
 
         for (int i = 0; i < repeatFor; i++) {
             TreeNode modelCharacter1;
             TreeNode modelCharacter2 = null;
             //*pick character 2 times
-            modelCharacter1 = util.getMinimumAppearanceCharacter(map);
+            modelCharacter1 = util.getMinimumAppearanceCharacter(tempMap);
             //* character that is picked is removed from the map
-            map.remove(modelCharacter1.getCharacter());
+            tempMap.remove(modelCharacter1.getCharacter());
 
 
             //* when repeat for is an odd number, in the latest loop, there will be 1 character left
-            if (map.size() > 0) {
-                modelCharacter2 = util.getMinimumAppearanceCharacter(map);
+            if (tempMap.size() > 0) {
+                modelCharacter2 = util.getMinimumAppearanceCharacter(tempMap);
                 //*set as picked
-                map.remove(modelCharacter2.getCharacter());
+                tempMap.remove(modelCharacter2.getCharacter());
             }
             int total = 0;
             total += (modelCharacter2 != null ? (modelCharacter2.getFreq() + modelCharacter1.getFreq()) : modelCharacter1.getFreq());
@@ -126,7 +129,7 @@ public class Controller {
     }
 
     public int getCompressionSizeInByte(String text) {
-        //* assumption that each character in text is 1 bit
+        //* assume that each character in text is 1 bit
         //* divided by 8 to convert it to byte
         return (int) Math.round(text.length() / 8.0);
     }

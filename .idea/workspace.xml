@@ -22,12 +22,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500c689c-357b-45c9-be83-8358b906b0cf" name="Default Changelist" comment="do huffman compression, UI not done yet">
+    <list default="true" id="500c689c-357b-45c9-be83-8358b906b0cf" name="Default Changelist" comment="refactor code">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openjfx/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openjfx/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/openjfx/PrimaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openjfx/PrimaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openjfx/SecondaryController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/openjfx/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openjfx/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openjfx/controller/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openjfx/controller/Util.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/org/openjfx/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/openjfx/primary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/openjfx/secondary.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/openjfx/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/openjfx/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/openjfx/PrimaryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/openjfx/PrimaryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/openjfx/SecondaryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/openjfx/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/openjfx/primary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/openjfx/secondary.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,13 +107,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -202,7 +213,8 @@
       <workItem from="1605455331443" duration="146000" />
       <workItem from="1605459098826" duration="1777000" />
       <workItem from="1605488496143" duration="28000" />
-      <workItem from="1605594887009" duration="28289000" />
+      <workItem from="1605594887009" duration="36333000" />
+      <workItem from="1605661574211" duration="1825000" />
     </task>
     <task id="LOCAL-00001" summary="setup project">
       <created>1605450851605</created>
@@ -225,7 +237,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605628635297</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Set FXLabel for compression size, original size, and ratio">
+      <created>1605629295851</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605629295851</updated>
+    </task>
+    <task id="LOCAL-00005" summary="refactor code">
+      <created>1605629317236</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605629317236</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +277,9 @@
     <MESSAGE value="fix error Illegal reflective access by com.jfoenix.adapters.ReflectionHelpe" />
     <MESSAGE value="fix error Illegal reflective access by com.jfoenix.adapters.ReflectionHelper" />
     <MESSAGE value="do huffman compression, UI not done yet" />
-    <option name="LAST_COMMIT_MESSAGE" value="do huffman compression, UI not done yet" />
+    <MESSAGE value="Set FXLabel for compression size, original size, and ratio" />
+    <MESSAGE value="refactor code" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor code" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1366" y="36" width="1084" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605603582747">
@@ -266,38 +294,42 @@
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="1768" y="105" width="424" height="591" key="#com.intellij.ide.macro.MacrosDialog/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605448935815" />
-    <state x="1834" y="76" width="559" height="649" key="#com.intellij.ide.util.MemberChooser" timestamp="1605618379552">
+    <state x="1834" y="76" width="559" height="649" key="#com.intellij.ide.util.MemberChooser" timestamp="1605636975914">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state x="1834" y="76" width="559" height="649" key="#com.intellij.ide.util.MemberChooser/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605618379552" />
+    <state x="1834" y="76" width="559" height="649" key="#com.intellij.ide.util.MemberChooser/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605636975914" />
     <state x="2267" y="27" width="419" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605618074947">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="2267" y="27" width="419" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605618074947" />
-    <state x="1759" y="146" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605611958850">
+    <state x="1759" y="146" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605663165225">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state x="1759" y="146" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605611958850" />
+    <state x="1759" y="146" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605663165225" />
+    <state x="1759" y="146" width="524" height="509" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1605636625085">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state x="1759" y="146" width="524" height="509" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605636625085" />
     <state x="1809" y="155" width="735" height="491" key="FileChooserDialogImpl" timestamp="1605597544466">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="1809" y="155" width="735" height="491" key="FileChooserDialogImpl/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605597544466" />
-    <state width="1274" height="139" key="GridCell.Tab.0.bottom" timestamp="1605628796333">
+    <state width="1274" height="115" key="GridCell.Tab.0.bottom" timestamp="1605663350287">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state width="1274" height="139" key="GridCell.Tab.0.bottom/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605628796333" />
-    <state width="1274" height="139" key="GridCell.Tab.0.center" timestamp="1605628796333">
+    <state width="1274" height="115" key="GridCell.Tab.0.bottom/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605663350287" />
+    <state width="1274" height="115" key="GridCell.Tab.0.center" timestamp="1605663350286">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state width="1274" height="139" key="GridCell.Tab.0.center/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605628796333" />
-    <state width="1274" height="139" key="GridCell.Tab.0.left" timestamp="1605628796333">
+    <state width="1274" height="115" key="GridCell.Tab.0.center/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605663350286" />
+    <state width="1274" height="115" key="GridCell.Tab.0.left" timestamp="1605663350286">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state width="1274" height="139" key="GridCell.Tab.0.left/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605628796333" />
-    <state width="1274" height="139" key="GridCell.Tab.0.right" timestamp="1605628796333">
+    <state width="1274" height="115" key="GridCell.Tab.0.left/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605663350286" />
+    <state width="1274" height="115" key="GridCell.Tab.0.right" timestamp="1605663350287">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state width="1274" height="139" key="GridCell.Tab.0.right/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605628796333" />
+    <state width="1274" height="115" key="GridCell.Tab.0.right/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605663350287" />
     <state x="1472" y="27" width="1099" height="741" key="SettingsEditor" timestamp="1605602210366">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
@@ -306,10 +338,10 @@
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="1466" y="127" width="1120" height="541" key="VCS.FileHistoryDialog/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605451780118" />
-    <state x="1621" y="129" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1605628637800">
+    <state x="1621" y="129" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1605629675348">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state x="1621" y="129" width="800" height="543" key="Vcs.Push.Dialog.v2/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605628637800" />
+    <state x="1621" y="129" width="800" height="543" key="Vcs.Push.Dialog.v2/1366.0.1366.768/0.27.1366.741@1366.0.1366.768" timestamp="1605629675348" />
     <state x="1832" y="72" width="616" height="612" key="find.popup" timestamp="1605628578922">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>

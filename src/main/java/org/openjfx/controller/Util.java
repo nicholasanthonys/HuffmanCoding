@@ -1,8 +1,6 @@
 package org.openjfx.controller;
 
 import org.openjfx.Models.TreeNode;
-
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -27,12 +25,8 @@ public class Util {
         return character;
     }
 
-    public void printListNode(ArrayList<TreeNode> treeNodes) {
-        for (TreeNode n : treeNodes) {
-            System.out.println(n.toString());
-        }
-    }
 
+    //* function that will print pre order node tree
     public void printPreOrderTraversal(TreeNode root) {
         if (root == null) {
             return;
@@ -46,10 +40,20 @@ public class Util {
         printPreOrderTraversal(root.getRight());
     }
 
+    //* function that will print prefix map
     public void printPrefixMap(Map<Character, String> prefixMap) {
 
         for (Map.Entry<Character, String> entry : prefixMap.entrySet()) {
             System.out.println("key " + entry.getKey() + " result " + entry.getValue());
         }
+    }
+
+    //* Function that will return deep copy map
+    public HashMap<Character, Integer> deepCopyMap(HashMap<Character, Integer> original) {
+        HashMap<Character, Integer> copy = new HashMap<>();
+        original.entrySet().forEach(entry -> {
+            copy.put(entry.getKey(), entry.getValue());
+        });
+        return copy;
     }
 }
