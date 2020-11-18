@@ -20,6 +20,7 @@ public class App extends Application {
         scene = new Scene(loadFXML("primary"));
         scene.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
         stage.setScene(scene);
+        stage.setTitle("Huffman Text Compression Demo");
         stage.show();
     }
 
