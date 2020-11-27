@@ -23,7 +23,7 @@ public class Controller {
     }
 
     public TreeNode constructTreeFromMap(HashMap<Character, Integer> map) {
-        Queue<TreeNode> priorityQueue = new LinkedList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
         int repeatFor = 0;
 
         //* we need to deep copy tempMap because we're gonna deal with removing element so it won't affecting the original map
@@ -55,11 +55,11 @@ public class Controller {
             total += (modelCharacter2 != null ? (modelCharacter2.getFreq() + modelCharacter1.getFreq()) : modelCharacter1.getFreq());
 
             TreeNode treeNode = new TreeNode(total, '\0', modelCharacter1, modelCharacter2);
-            priorityQueue.add(treeNode);
+            queue.add(treeNode);
 
         }
 
-        return buildTreeFromQueue(priorityQueue);
+        return buildTreeFromQueue(queue);
     }
 
     public TreeNode buildTreeFromQueue(Queue<TreeNode> queues) {
@@ -129,8 +129,8 @@ public class Controller {
     }
 
     public int getCompressionSizeInByte(String text) {
-        //* assume that each character in text is 1 bit
-        //* divided by 8 to convert it to byte
+        //* assume that each character in text is 1 Byte
+        //* divided by 8 to convert it to bit
         return (int) Math.round(text.length() / 8.0);
     }
 
