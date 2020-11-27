@@ -1,10 +1,10 @@
 package org.openjfx.Models;
 
 public class TreeNode {
-    int freq;
-    char character;
-    TreeNode left;
-    TreeNode right;
+    private int freq;
+    private char character;
+    private TreeNode left;
+    private TreeNode right;
 
     public TreeNode(int freq, char character, TreeNode left, TreeNode right) {
         this.freq = freq;
